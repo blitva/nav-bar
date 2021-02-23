@@ -158,7 +158,6 @@ const NavBarMain = styled.div`
   background-size: 350px;
   color: rgb(15, 17, 17);
   display: flex;
-  flex-wrap: nowrap;
   font-size: 12px;
   height: 39px;
   line-height: 12px;
@@ -168,6 +167,8 @@ const NavBarMain = styled.div`
   z-index: 4;
   overflow-x: hidden;
   overflow-y: hidden;
+  flex-direction: row;
+  flex-wrap: wrap;
 `;
 
 const NavBarMainItem = styled.span`
@@ -214,7 +215,7 @@ const SubNav = styled.div`
   border-bottom-color: rgb(221, 221, 221);
   box-sizing: border-box;
   cursor: pointer;
-  display: block;
+  display: flex;
   font-size: 14px;
   height: 50px;
   line-height: 32px;
@@ -224,6 +225,8 @@ const SubNav = styled.div`
   min-width: 1000px;
   padding-top: 9px;
   white-space: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 `;
 
 const SubNavItem = styled.span`
